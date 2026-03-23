@@ -39,17 +39,98 @@ Iphone: 402px x 873px
     body{
         background-image: url("./assets/Background_Desktop.png");
     }
+
+    .content-pane {
+        margin-left: 291px;
+        margin-top: 112px;
+
+        height: 1002px;
+        max-width: 709px;
+    }
+
+    .bio-label {
+        font-size: 20px;
+        margin-bottom: 36px;
+    }
+
+    .bio-name {
+        font-size: 64px;
+        margin-bottom: 9px;
+    }
+
+    .bio-title {
+        font-size: 32px;
+        margin-bottom: 36px;
+    }
+
+    .svg-line{
+        width: 32px;
+    }
 }
 
 @media (max-width: 1024px) {
     body{
         background-image: url("./assets/Background_Ipad.png");
     }
+
+    .content-pane {
+        margin-left: 156px;
+        margin-top: 182px;
+
+        height: 1184px;
+        max-width: 709px;
+    }
+
+    .bio-label {
+        font-size: 20px;
+    }
+
+    .bio-name {
+        font-size: 48px;
+    }
+
+    .bio-title {
+        font-size: 24px;
+    }
+
+    .text-bio {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 402px) {
     body{
         background-image: url("./assets/Background_Iphone.png");
+    }
+
+    .content-pane {
+        margin-left: 36px;
+        margin-top: 132px;
+
+        height: 700px;
+        max-width: 330px;
+    }
+
+    .bio-label {
+        font-size: 12px;
+        margin-bottom: 18px;
+    }
+
+    .bio-name {
+        font-size: 20px;
+    }
+
+    .bio-title {
+        font-size: 12px;
+        margin-bottom: 18px;
+    }
+
+    .text-bio {
+        font-size: 12px;
+    }
+
+    .svg-line{
+        width: 18px;
     }
 }
 
@@ -79,14 +160,6 @@ h2 {
 
 p {
     font-family: Satoshi;
-}
-
-.content-pane {
-    margin-left: 291px;
-    margin-top: 112px;
-
-    height: 1002px;
-    max-width: 709px;
 }
 
 .text-bio div {
