@@ -1,20 +1,20 @@
 [
     {
-        "company": "Allianz Life Indonesia",
+        "company": "Allianz",
         "position": "Senior Sales Manager",
-        "year": "March 2023 - October 2025",
+        "year": "2023 - 2025",
         "description": "Achieved Rp 450+ million Annualized Premium (ALP) within 12 months by applying structured sales tracking, customer segmentation, and pipeline prioritization. Led and managed a 5–8 member sales team, increasing lead-to-close conversion rate by 30% and shortening the average sales cycle through digital funnel optimization and performance monitoring. Collaborated with branch and regional management to analyze customer behavior and market trends, contributing insights that influenced product positioning and target market focus."
     },
     {
-        "company": "DANA Indonesia",
+        "company": "DANA",
         "position": "Front-End Software Engineer",
-        "year": "February 2024 - February 2025",  
+        "year": "2024 - 2025",  
         "description": "Developed and maintained 10+ user-facing features and UI enhancements using Vue.js for a high-traffic digital wallet application used by millions of users, with strong focus on performance and reliability. Owned and implemented end-to-end payment flow UI, integrating frontend components with backend APIs to ensure seamless data-driven interactions, proper loading states, error handling, and consistent transaction states across the user journey. Collaborated closely with designers and backend engineers to deliver accurate, reusable, and maintainable components, improving development efficiency and ensuring a consistent user experience across releases."
     },
     {
         "company": "Binus University",
-        "position": "Fulltime Laboratory Assistant",
-        "year": "August 2022 - August 2023",  
+        "position": "Laboratory Assistant",
+        "year": "2022 - 2023",  
         "description": "Assisted in 3+ computer science and programming courses, supporting 50+ students per semester in web development fundamentals, JavaScript logic, and structured problem-solving. Reviewed and evaluated 100+ student code submissions, providing actionable feedback on correctness, readability, and best practices, helping improve code quality and assignment completion rates. Guided students through debugging and technical concepts during lab sessions, enabling faster issue resolution and strengthening students’ understanding of core programming principles."
     }
 ]

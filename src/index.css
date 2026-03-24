@@ -48,6 +48,7 @@ Iphone: 402px x 873px
         max-width: 709px;
     }
 
+    /* bio */
     .bio-label {
         font-size: 20px;
         margin-bottom: 36px;
@@ -65,6 +66,41 @@ Iphone: 402px x 873px
 
     .svg-line{
         width: 32px;
+        margin-right: 16px;
+    }
+
+    .bio {
+        margin-bottom: 112px;
+    }
+
+    /* sub-header  */
+    .sub-header {
+        font-size: 20px;
+    }
+
+    /* experience */
+    .card-item-experience {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+
+        margin-top: 48px;
+    }
+
+    .text-experience-year{
+        font-size: 20px;
+        white-space: nowrap;
+    }
+
+    .text-experience-title {
+        font-size: 24px;
+    }
+
+    .text-experience-description {
+        font-size: 22px;
+        margin-top: 16px;
+
+        text-align: justify;
     }
 }
 
@@ -81,6 +117,7 @@ Iphone: 402px x 873px
         max-width: 709px;
     }
 
+    /* Bio */
     .bio-label {
         font-size: 20px;
     }
@@ -95,6 +132,25 @@ Iphone: 402px x 873px
 
     .text-bio {
         font-size: 20px;
+    }
+
+    /* sub-header  */
+    .sub-header {
+        font-size: 14px;
+    }
+
+    /* experience */
+    .card-item-experience {
+        margin-top: 40px;
+    }
+
+    .text-experience-title {
+        font-size: 20px;
+    }
+
+    .text-experience-description {
+        font-size: 20px;
+        margin-top: 12px;
     }
 }
 
@@ -111,6 +167,7 @@ Iphone: 402px x 873px
         max-width: 330px;
     }
 
+    /* bio  */
     .bio-label {
         font-size: 12px;
         margin-bottom: 18px;
@@ -131,9 +188,45 @@ Iphone: 402px x 873px
 
     .svg-line{
         width: 18px;
+        margin-right: 7px;
+    }
+
+    .bio {
+        margin-bottom: 54px;
+    }
+
+    /* sub-header  */
+    .sub-header {
+        font-size: 9px;
+    }
+
+    /* experience */
+    .card-item-experience {
+        margin-top: 24px;
+
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .text-experience-year{
+        font-size: 10px;
+    }
+
+    .text-experience-title {
+        font-size: 12px;
+    }
+
+    .text-experience-description {
+        font-size: 12px;
+        margin-top: 4px;
+    }
+
+    .wrapper-experience > :first-child {
+        margin-top: 8px;
     }
 }
 
+/* Small Components  */
 body{
     background-color: #0E0F0E;
     background-size: cover;
@@ -162,6 +255,53 @@ p {
     font-family: Satoshi;
 }
 
+.text-description-grey-50 {  
+    color: #868686;
+    opacity: 0.5;
+}
+
+.text-jetbrains-mono-regular {
+    font-family: JetBrains Mono;
+    font-weight: normal;
+}
+
+.text-jetbrains-mono-bold {
+    font-family: JetBrains Mono;
+    font-weight: bold;
+}
+
+.text-satoshi-regular {
+    font-family: Satoshi;
+    font-weight: normal;
+}
+
+.primary-green {
+    color: #66d593;
+}
+
+.white {
+    color: #f6f6f6;
+}
+
+.overflow {
+    overflow-y: scroll;
+}
+
+.hide-scrollbar {
+  /* Firefox */
+  scrollbar-width: none;
+
+  /* Internet Explorer and Edge */
+  -ms-overflow-style: none;
+}
+
+/* Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
 .text-bio div {
     animation: typing 3s steps(50) forwards;
     overflow: hidden;
@@ -174,5 +314,18 @@ p {
     }
     to {
         width: 100%;
+    }
+}
+
+.card-item-experience:hover {
+    .text-experience-title {
+        color: #66d593;
+    }
+
+    .text-experience-year,
+    .text-experience-description {
+        color: #f6f6f6;
+        opacity: 0.75;
+
     }
 }

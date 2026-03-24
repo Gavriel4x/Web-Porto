@@ -23,28 +23,45 @@ export default function App() {
     }, []);
 
     return (
-        <div className="content-pane">
+        <div className="wrapper overflow hide-scrollbar">
+            <div className="content-pane">
 
-            <div className="bio">
-                <h2 className="bio-label">&gt; hello_iam</h2>
+                <div className="bio">
+                    <h2 className="bio-label">&gt; hello_iam</h2>
 
-                <h1 className="bio-name">Gavriel Reynard</h1>
+                    <h1 className="bio-name">Gavriel Reynard</h1>
 
-                <h2 className="bio-title">Front-End Developer</h2>
+                    <h2 className="bio-title">Front-End Developer</h2>
 
-                <h2 className="text-bio" style={{ color: "#868686" }}>
+                    <h2 className="text-bio" style={{ color: "#868686" }}>
 
-                    <div>I’m <a className="text-bio-bold">passionate in building clean scalable web</a></div>
-                    <div style={{display: displayDivTwo}}><a>applications</a>. I bring both technical expertise &</div>
-                    <div style={{display: displayDivThree}}>strong product thinking skills to the products I</div>
-                    <div style={{display: displayDivFour}}>build.</div>
-                    <br/><br/>
-                    <div style={{display: displayDivFive}}> Open <a style={{color: "#FEA2CD"}}>for</a> collaboration and opportunities.</div>
-                </h2>
-            </div>
-            <div className="experience">
-                <div className="title-experience" style={{ display: "flex", alignItems:"center"}}>
-                    <h2 className="experience-label">EXPERIENCE</h2>
+                        <div>I’m <a className="text-bio-bold">passionate in building clean scalable web</a></div>
+                        <div style={{display: displayDivTwo}}><a>applications</a>. I bring both technical expertise &</div>
+                        <div style={{display: displayDivThree}}>strong product thinking skills to the products I</div>
+                        <div style={{display: displayDivFour}}>build.</div>
+                        <br/><br/>
+                        <div style={{display: displayDivFive}}> Open <a style={{color: "#FEA2CD"}}>for</a> collaboration and opportunities.</div>
+                    </h2>
+                </div>
+                <div className="experience">
+                    <div className="title-experience" style={{ display: "flex", alignItems:"center"}}>
+                        <img className="svg-line" src="./src/assets/line.svg" alt=""style={{height: "1px", backgroundColor:"#66d593"}} />
+                        <h2 className="experience-label sub-header">EXPERIENCE</h2>
+                    </div>
+                    <div className="wrapper-experience">
+                        {work_experience.map((experience, index) => (
+                            <div key={index} className="card-item-experience" style={{display:"flex", alignItems:"flex-start"}}>
+                                <div className="text-experience-year text-jetbrains-mono-regular text-description-grey-50">{experience.year}</div>
+
+                                <div className="container-experience">
+                                        <div className="text-experience-title white text-jetbrains-mono-bold">{experience.position} • {experience.company}</div>
+                                        
+                                        <div className="text-experience-description text-satoshi-regular text-description-grey-50">{experience.description}</div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
                 </div>
             </div>
         </div>
