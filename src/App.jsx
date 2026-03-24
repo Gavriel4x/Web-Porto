@@ -14,11 +14,28 @@ export default function App() {
         const t3 = setTimeout(() => setDisplayDivFour("revert"), 8750);
         const t4 = setTimeout(() => setDisplayDivFive("revert"), 9250);
 
+        const handlePointerMove = (event) => {
+            const x = `${event.clientX}px`;
+            const y = `${event.clientY}px`;
+            document.documentElement.style.setProperty("--cursor-x", x);
+            document.documentElement.style.setProperty("--cursor-y", y);
+            document.documentElement.classList.remove("pointer-out");
+        };
+
+        const handlePointerLeave = () => {
+            document.documentElement.classList.add("pointer-out");
+        };
+
+        window.addEventListener("pointermove", handlePointerMove);
+        window.addEventListener("pointerleave", handlePointerLeave);
+
         return () => {
             clearTimeout(t1);
             clearTimeout(t2);
             clearTimeout(t3);
             clearTimeout(t4);
+            window.removeEventListener("pointermove", handlePointerMove);
+            window.removeEventListener("pointerleave", handlePointerLeave);
         };
     }, []);
 

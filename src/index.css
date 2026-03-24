@@ -5,6 +5,13 @@ Ipad 12: 1024px x 1366px
 Iphone: 402px x 873px 
 */
 
+:root {
+    --cursor-x: 50%;
+    --cursor-y: 50%;
+    --glow-opacity: 0;
+    --glow-color: 255, 255, 255;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -44,7 +51,7 @@ Iphone: 402px x 873px
         margin-left: 291px;
         margin-top: 112px;
 
-        height: 1002px;
+        height: 57.986vh;
         max-width: 709px;
     }
 
@@ -231,6 +238,24 @@ body{
     background-color: #0E0F0E;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    background-image:
+        radial-gradient(circle at var(--cursor-x) var(--cursor-y), rgba(var(--glow-color), var(--glow-opacity)) 0px, rgba(var(--glow-color), calc(var(--glow-opacity) * 0.35)) 80px, rgba(var(--glow-color), 0) 200px),
+        url("./assets/Background_Desktop.png");
+    background-blend-mode: screen, normal;
+    transition: --glow-opacity 0.2s ease;
+}
+
+body:hover {
+    --glow-opacity: 0.04;
+}
+
+body.pointer-out {
+    --glow-opacity: 0;
+}
+
+.wrapper {
+    height: 100vh;
 }
 
 h1 {
