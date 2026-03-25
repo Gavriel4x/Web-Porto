@@ -83,7 +83,7 @@ export default function App() {
                 </div>
                 <div className="projects">
                     <div className="title-projects" style={{ display: "flex", alignItems:"center"}}>
-                        <img className="svg-line" src="./src/assets/projects/Thumbnail_Porto_web.png" alt=""style={{height: "1px", backgroundColor:"#66d593"}} />
+                        <img className="svg-line" src="./src/assets/line.svg" alt=""style={{height: "1px", backgroundColor:"#66d593"}} />
                         <h2 className="projects-label sub-header">PROJECTS</h2>
                     </div>
                     <div className="wrapper-projects">
