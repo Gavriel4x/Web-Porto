@@ -2,19 +2,19 @@
     {
         "title": "Portfolio Website",
         "description": "First personal portfolio website built with genuine design and learning experience.",
-        "image": "Thumbnail_Porto_web.png",
+        "image": "https://res.cloudinary.com/dykphdvdb/image/upload/v1774450354/thumbnail_porto_web_fhj825.png",
         "techstack": ["HTML", "CSS", "JavaScript", "React"]
     },
     {
         "title": "Valentine's Day Website",
         "description": "Freelance project for a Valentine's Day themed website.",
-        "image": "Thumbnail_Valentines_web.png",
-        "techstack": ["EJS","Express", "Node.js","sqlite3"]
+        "image": "https://res.cloudinary.com/dykphdvdb/image/upload/v1774450677/thumbnail_valentines_web_qzjurh.png",
+        "techstack": ["EJS","Express", "Node.js","SQLite3"]
     },
     {
         "title": "QR Code Generator",
         "description": "A QR code generator built with Node.js, allowing users to create and customize QR codes for various purposes.",
-        "image": "Thumbnail_QR_Generator.png",
+        "image": "https://res.cloudinary.com/dykphdvdb/image/upload/v1774450839/thumbnail_qr_generator_rfjlsz.png",
         "techstack": ["Node.js", "Express"]
     }
 ]

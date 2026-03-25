@@ -111,8 +111,56 @@ Iphone: 402px x 873px
     }
 
     /* projects */
+    .wrapper-projects{
+        gap: 27px;
+        margin-top: 40px;
+        margin-bottom: 27px;
+    }
+
+    .inner-wrapper-projects{
+        padding: 28px 24.5px 28px 29.5px;
+    }
+
     .projects {
         margin-top: 112px;
+    }
+
+    .img-projects {
+        width: 194px;
+        height: 170px;
+    }
+
+    .container-projects {
+        max-width: 425px;
+    }
+
+    .container-item-projects {
+        gap: 14px;
+    }
+
+    .title-project {
+        font-size: 24px;
+    }
+
+    .description-project {
+        font-size: 20px;
+    }
+
+    .techstack-project {
+        font-size: 16px;
+        border-radius: 34px;    
+    }
+
+    .button-project {
+        font-size: 14px;
+    }
+
+    .wrapper-techstack {
+        gap: 8px;
+    }
+    
+    .button-all-projects {
+        font-size: 18px;
     }
 }
 
@@ -163,6 +211,19 @@ Iphone: 402px x 873px
     .text-experience-description {
         font-size: 20px;
         margin-top: 12px;
+    }
+
+    /* projects  */
+    .inner-wrapper-projects{
+        padding: 33.5px 24.5px 33.5px 29.5px;
+    }
+
+    .title-project {
+        font-size: 20px;
+    }
+
+    .techstack-project {
+        font-size: 14px;
     }
 }
 
@@ -238,8 +299,56 @@ Iphone: 402px x 873px
     }
 
     /* projects */
+    .wrapper-projects{
+        gap: 10px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+    }
+
+    .inner-wrapper-projects{
+        padding: 12px 18px 12px 18px;
+    }
+
     .projects {
         margin-top: 54px;
+    }
+
+    .img-projects {
+        display: none;
+    }
+
+    .container-projects {
+        max-width: 294px;
+    }
+
+    .container-item-projects {
+        gap: 4px;
+    }
+
+    .title-project {
+        font-size: 12px;
+    }
+
+    .description-project {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+
+    .techstack-project {
+        font-size: 8px;
+        border-radius: 16px;    
+    }
+
+    .button-project {
+        font-size: 9px;
+    }
+
+    .wrapper-techstack {
+        gap: 4px;
+    }
+
+    .button-all-projects {
+        font-size: 12px;
     }
 }
 
@@ -364,3 +473,37 @@ p {
 
     }
 }
+/* projects  */
+.card-item-projects {
+    border: 1px solid rgba(246, 246, 246, 0.2);
+}
+
+.text-zoom-out {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform-origin: right center;
+}
+
+.card-item-projects:hover {
+
+    .title-project {
+        color: #66d593;
+    }
+
+    .text-zoom-out {
+        transform: scale(1.08); 
+    }
+
+    border-color: #66d593;
+ 
+    background: linear-gradient(
+    rgba(102, 213, 147, 0.1),
+    rgba(53, 111, 77, 0.1)
+    );
+}
+
+/* projects - view all projects button */
+.button-all-projects:hover {
+    color: #66d593;
+}
+

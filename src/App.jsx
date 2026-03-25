@@ -86,14 +86,32 @@ export default function App() {
                         <img className="svg-line" src="./src/assets/line.svg" alt=""style={{height: "1px", backgroundColor:"#66d593"}} />
                         <h2 className="projects-label sub-header">PROJECTS</h2>
                     </div>
-                    <div className="wrapper-projects">
+                    <div className="wrapper-projects" style={{display:"flex", flexDirection:"column"}}>
                         {projects.map((project, index) => (
-                            <div key={index} className="card-item-projects" style={{display:"flex"}}>
-                                <img src={`./src/assets/projects/${project.image}`} alt={project.title} />
+                            <div key={index} className="card-item-projects inner-wrapper-projects" style={{display:"flex", gap:"36px", borderRadius:"10px"}}>
+                                <img className="img-projects" src={project.image} alt={project.title} />
                                 
+                                <div className="container-projects" style={{display:"flex", flexDirection:"column", justifyContent:"space-between"}}>
+                                    <div className="container-item-projects" style={{display:"flex", flexDirection:"column"}}>
+                                        <div className="title-project text-jetbrains-mono-bold white">{project.title}</div>
+                                        <div className="description-project text-satoshi-regular white" style={{opacity:"70%"}}>{project.description}</div>
+                                        <div className="wrapper-techstack" style={{display:"flex", flexDirection:"row"}}>
+                                            {project.techstack.map((tech, techIndex) => (
+                                                <div key={techIndex} className="techstack-project primary-green text-satoshi-regular"
+                                                style={{backgroundColor: "rgba(102, 213, 147, 0.2)",
+                                                    width: "fit-content",
+                                                    padding: "3px 10px",
+                                                }}
+                                                >{tech}</div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                    <div className="button-project text-jetbrains-mono-regular white text-zoom-out" style={{opacity: "70%", cursor: "pointer", textAlign: "right"}}>View project →</div>
+                                </div>
                             </div>
                         ))}
                     </div>
+                    <div className="button-all-projects text-jetbrains-mono-regular white" style={{cursor: "pointer", textAlign: "left"}}>View more projects →</div>
                 </div>
                 
             </div>
