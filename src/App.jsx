@@ -1,5 +1,6 @@
-import React, {useEffect, useState} from "react";
+import {useEffect, useState} from "react";
 import work_experience from "./assets/data/work_experience.json";
+import projects from "./assets/data/projects.json";
 
 export default function App() {
 
@@ -80,6 +81,21 @@ export default function App() {
                     </div>
 
                 </div>
+                <div className="projects">
+                    <div className="title-projects" style={{ display: "flex", alignItems:"center"}}>
+                        <img className="svg-line" src="./src/assets/projects/Thumbnail_Porto_web.png" alt=""style={{height: "1px", backgroundColor:"#66d593"}} />
+                        <h2 className="projects-label sub-header">PROJECTS</h2>
+                    </div>
+                    <div className="wrapper-projects">
+                        {projects.map((project, index) => (
+                            <div key={index} className="card-item-projects" style={{display:"flex"}}>
+                                <img src={`./src/assets/projects/${project.image}`} alt={project.title} />
+                                
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                
             </div>
         </div>
     );

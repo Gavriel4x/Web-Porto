@@ -109,6 +109,11 @@ Iphone: 402px x 873px
 
         text-align: justify;
     }
+
+    /* projects */
+    .projects {
+        margin-top: 112px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -230,6 +235,11 @@ Iphone: 402px x 873px
 
     .wrapper-experience > :first-child {
         margin-top: 8px;
+    }
+
+    /* projects */
+    .projects {
+        margin-top: 54px;
     }
 }
 

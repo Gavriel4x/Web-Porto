@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Portfolio Website",
+        "description": "First personal portfolio website built with genuine design and learning experience.",
+        "image": "Thumbnail_Porto_web.png",
+        "techstack": ["HTML", "CSS", "JavaScript", "React"]
+    },
+    {
+        "title": "Valentine's Day Website",
+        "description": "Freelance project for a Valentine's Day themed website.",
+        "image": "Thumbnail_Valentines_web.png",
+        "techstack": ["EJS","Express", "Node.js","sqlite3"]
+    },
+    {
+        "title": "QR Code Generator",
+        "description": "A QR code generator built with Node.js, allowing users to create and customize QR codes for various purposes.",
+        "image": "Thumbnail_QR_Generator.png",
+        "techstack": ["Node.js", "Express"]
+    }
+]
