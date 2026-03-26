@@ -1,0 +1,67 @@
+/* media screen, 1728px, 1024px, 402px */
+/*  31x31, 2x703, 2x960 , 2x100 */
+
+
+@media (min-width: 1728px), (max-width: 1728px)  {
+    .logo {
+        width: 31px;
+        height: 31px;
+    }
+
+    .line {
+        max-height: 55vh;
+    }
+
+    .wrapper-contacts,
+    .container-contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-contacts {
+        gap: 39px;
+    }
+
+    .wrapper-contacts {
+        position: absolute;
+        gap: 48px;
+        top: 120px;
+        left: 95px;
+    }
+
+}
+
+@media (max-width: 1024px)  {
+
+    .wrapper-contacts {
+        top: 77px;
+        left: 45px;
+    }
+}
+
+@media (max-width: 402px)  {
+
+    .line {
+        height: 100px;
+        width: 2px;
+    }
+
+    .wrapper-contacts {
+        flex-direction: column;
+        gap: 22px;
+
+        position: static;
+        padding-bottom: 44px;
+    }
+
+    .container-contacts {
+        flex-direction: row;
+        gap: 18px;
+    }
+
+    .wrapper-contacts > *:last-child {
+        order: -1;
+    }
+
+}

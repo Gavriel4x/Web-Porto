@@ -171,7 +171,7 @@ Iphone: 402px x 873px
 
     .certifications {
         margin-top: 112px;
-        padding-bottom: 80px;
+        padding-bottom: 85px;
     }
 
     .title-certifications {
@@ -407,6 +407,15 @@ Iphone: 402px x 873px
 
     .button-certifications {
         font-size: 9px;
+    }
+
+    .certifications {
+        padding: 22px;
+    }
+
+    /* contacts  */
+    .content-pane > *:first-child {
+        order: 9;
     }
 }
 

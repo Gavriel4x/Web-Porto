@@ -1,4 +1,5 @@
 import {useEffect, useState} from "react";
+import Contacts from "./components/Contacts.jsx";
 import work_experience from "./assets/data/work_experience.json";
 import projects from "./assets/data/projects.json";
 import certifications from "./assets/data/certifications.json";
@@ -43,8 +44,8 @@ export default function App() {
 
     return (
         <div className="wrapper overflow hide-scrollbar">
-            <div className="content-pane">
-
+            <div className="content-pane" style={{display:"flex", flexDirection:"column"}}>
+                <Contacts/>
                 <div className="bio">
                     <h2 className="bio-label">&gt; hello_iam</h2>
 
