@@ -166,7 +166,7 @@ Iphone: 402px x 873px
 
 @media (max-width: 1024px) {
     body{
-        background-image: url("./assets/Background_Ipad.png");
+        background-image: url("./assets/Background_Ipad.png") !important;
     }
 
     .content-pane {
@@ -229,7 +229,7 @@ Iphone: 402px x 873px
 
 @media (max-width: 402px) {
     body{
-        background-image: url("./assets/Background_Iphone.png");
+        background-image: url("./assets/Background_Iphone.png") !important;
     }
 
     .content-pane {
