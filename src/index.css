@@ -42,7 +42,7 @@ Iphone: 402px x 873px
     font-weight: normal;
 }
 
-@media (max-width: 1728px) {
+@media (min-width: 1728px), (max-width: 1728px) {
     body{
         background-image: url("./assets/Background_Desktop.png");
     }
@@ -162,6 +162,31 @@ Iphone: 402px x 873px
     .button-all-projects {
         font-size: 18px;
     }
+
+    /* certifications  */
+    .wrapper-certifications {
+        gap: 39px;
+        margin-top: 40px;
+    }
+
+    .certifications {
+        margin-top: 112px;
+        padding-bottom: 80px;
+    }
+
+    .title-certifications {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .description-certifications {
+        font-size: 20px;
+        margin-bottom: 17px;
+    }
+
+    .button-certifications {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -223,6 +248,15 @@ Iphone: 402px x 873px
     }
 
     .techstack-project {
+        font-size: 14px;
+    }
+
+    /* certifications  */
+    .title-certifications {
+        font-size: 20px;
+    }
+
+    .button-certifications {
         font-size: 14px;
     }
 }
@@ -349,6 +383,30 @@ Iphone: 402px x 873px
 
     .button-all-projects {
         font-size: 12px;
+    }
+
+    /* certifications  */
+    .wrapper-certifications {
+        gap: 22px;
+        margin-top: 8px;
+    }
+
+    .certifications {
+        margin-top: 54px;
+    }
+
+    .title-certifications {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+
+    .description-certifications {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .button-certifications {
+        font-size: 9px;
     }
 }
 
@@ -507,3 +565,14 @@ p {
     color: #66d593;
 }
 
+/* certifications  */
+.container-certifications:hover {
+    .title-certifications {
+        color:#66d593;
+    }
+
+    .button-certifications {
+        opacity: 100% !important;
+        background-color: rgba(39, 191, 101, 0.5) !important;
+    }
+}

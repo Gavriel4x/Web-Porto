@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import work_experience from "./assets/data/work_experience.json";
 import projects from "./assets/data/projects.json";
+import certifications from "./assets/data/certifications.json";
 
 export default function App() {
 
@@ -88,7 +89,7 @@ export default function App() {
                     </div>
                     <div className="wrapper-projects" style={{display:"flex", flexDirection:"column"}}>
                         {projects.map((project, index) => (
-                            <div key={index} className="card-item-projects inner-wrapper-projects" style={{display:"flex", gap:"36px", borderRadius:"10px"}}>
+                            <div key={index} className="card-item-projects inner-wrapper-projects" style={{display:"flex",cursor: "pointer", gap:"36px", borderRadius:"10px"}}>
                                 <img className="img-projects" src={project.image} alt={project.title} />
                                 
                                 <div className="container-projects" style={{display:"flex", flexDirection:"column", justifyContent:"space-between"}}>
@@ -106,14 +107,35 @@ export default function App() {
                                             ))}
                                         </div>
                                     </div>
-                                    <div className="button-project text-jetbrains-mono-regular white text-zoom-out" style={{opacity: "70%", cursor: "pointer", textAlign: "right"}}>View project →</div>
+                                    <div className="button-project text-jetbrains-mono-regular white text-zoom-out" style={{opacity: "70%", textAlign: "right"}}>View project →</div>
                                 </div>
                             </div>
                         ))}
                     </div>
-                    <div className="button-all-projects text-jetbrains-mono-regular white" style={{cursor: "pointer", textAlign: "left"}}>View more projects →</div>
+                    {/* <div className="button-all-projects text-jetbrains-mono-regular white" style={{cursor: "pointer", textAlign: "left"}}>View more projects →</div> */}
                 </div>
-                
+                <div className="certifications">
+                    <div className="label-title-certifications" style={{ display: "flex", alignItems:"center"}}>
+                        <img className="svg-line" src="./src/assets/line.svg" alt=""style={{height: "1px", backgroundColor:"#66d593"}} />
+                        <h2 className="certifications-label sub-header">CERTIFICATIONS</h2>
+                    </div>
+                    <div className="wrapper-certifications" style={{display:"flex", cursor:"pointer", flexDirection:"column", maxWidth:"fit-content"}}>
+                        {certifications.map((certification, index) => (
+                            <div key={index} className="container-certifications">
+                                <div className="title-certifications text-jetbrains-mono-bold white">{certification.title}</div>
+                                <div className="description-certifications text-satoshi-regular white" style={{opacity:"70%"}}>{certification.institution} • {certification.date}</div>
+                                <div className="button-certifications text-jetbrains-mono-regular white"
+                                style={{backgroundColor: "rgba(39, 191, 101, 0.2)",
+                                    width: "fit-content",
+                                    padding: "3px 10px",
+                                    opacity: "60%",
+                                    borderRadius: "34px"
+                                }}
+                                >Show credential →</div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </div>
         </div>
     );
