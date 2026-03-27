@@ -17,30 +17,17 @@ export default function App() {
     const [activeId, setActiveId] = useState("");
 
     const callbackFunction = (entries) => {
-        let bestEntry = null;
 
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              setActiveId(entry.target.id);
+            setActiveId(entry.target.id);
             }
         });
-
-        // entries.forEach((entry) => {
-        //     if (entry.isIntersecting) {
-        //         if(!bestEntry || entry.intersectionRatio > bestEntry.intersectionRatio) {
-        //             bestEntry = entry;
-        //         }
-        //     }
-        // });
-
-        // if (bestEntry) {
-        //     setActiveId(bestEntry.target.id);
-        // }
     }
 
     const options = {
         root: null,
-        rootMargin: "0px 0px 0px 0px",
+        rootMargin: "0px",
         threshold: 0.5
     }
 
