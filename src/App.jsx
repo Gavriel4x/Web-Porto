@@ -151,21 +151,23 @@ export default function App() {
                     </div>
                     <div className="wrapper-certifications" style={{display:"flex", cursor:"pointer", flexDirection:"column", maxWidth:"fit-content"}}>
                         {certifications.map((certification, index) => (
-                            <div key={index} className="container-certifications">
-                                <div className="title-certifications text-jetbrains-mono-bold white">{certification.title}</div>
-                                <div className="description-certifications text-satoshi-regular white" style={{opacity:"70%"}}>{certification.institution} • {certification.date}</div>
-                                
-                                <a className="button-certifications text-jetbrains-mono-regular white"
+                            <a key={index} className="container-certifications"
                                 target="_blank"
                                 href={certification.link}
+                                style={{textDecoration:"none"}}
+                            >
+                                <div className="title-certifications text-jetbrains-mono-bold white">{certification.title}</div>
+                                <div className="description-certifications text-satoshi-regular white" style={{opacity:"70%"}}>{certification.institution} • {certification.date}</div>
+    
+                                <div className="button-certifications text-jetbrains-mono-regular white"
                                 style={{backgroundColor: "rgba(39, 191, 101, 0.2)",
                                     width: "fit-content",
                                     padding: "3px 10px",
                                     opacity: "60%",
                                     borderRadius: "34px"
                                 }}
-                                >Show credential →</a>
-                            </div>
+                                >Show credential →</div>
+                            </a>
                         ))}
                     </div>
                 </div>
