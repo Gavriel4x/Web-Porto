@@ -20,21 +20,27 @@ export default function contacts () {
     return (
         <div className="wrapper-contacts">
             <div className="container-contacts">
-                <img src={githubLogo} 
-                    onMouseOver={(e) => {e.currentTarget.src = onHoverGithubLogo}} 
-                    onMouseOut={(e) => {e.currentTarget.src = githubLogo}} 
-                    style={{cursor:"pointer"}}
-                alt="github logo" className="logo" /> 
-                <img src={linkedinLogo} 
-                    onMouseOver={(e) => {e.currentTarget.src = onHoverLinkedinLogo}} 
-                    onMouseOut={(e) => {e.currentTarget.src = linkedinLogo}} 
-                    style={{cursor:"pointer"}}
-                alt="linkedin logo" className="logo" /> 
-                <img src={emailLogo} 
-                    onMouseOver={(e) => {e.currentTarget.src = onHoverEmailLogo}} 
-                    onMouseOut={(e) => {e.currentTarget.src = emailLogo}} 
-                    style={{cursor:"pointer"}}
-                alt="email logo" className="logo" /> 
+                <a target="_blank" href="https://www.github.com/gavriel4x">
+                    <img src={githubLogo} 
+                        onMouseOver={(e) => {e.currentTarget.src = onHoverGithubLogo}} 
+                        onMouseOut={(e) => {e.currentTarget.src = githubLogo}} 
+                        style={{cursor:"pointer"}}
+                    alt="github logo" className="logo" /> 
+                </a>
+                <a target="_blank" href="https://id.linkedin.com/in/gavriel-reynard-a1b337221">
+                    <img src={linkedinLogo} 
+                        onMouseOver={(e) => {e.currentTarget.src = onHoverLinkedinLogo}} 
+                        onMouseOut={(e) => {e.currentTarget.src = linkedinLogo}} 
+                        style={{cursor:"pointer"}}
+                    alt="linkedin logo" className="logo" /> 
+                </a>
+                <a target="_blank" href="mailto:gavrielreyn@gmail.com">
+                    <img src={emailLogo} 
+                        onMouseOver={(e) => {e.currentTarget.src = onHoverEmailLogo}} 
+                        onMouseOut={(e) => {e.currentTarget.src = emailLogo}} 
+                        style={{cursor:"pointer"}}
+                    alt="email logo" className="logo" /> 
+                </a>
             </div>
             <img src={(() => {
                 

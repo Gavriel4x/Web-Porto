@@ -75,7 +75,7 @@ export default function App() {
                 <Navbar
                     activeId={activeId}
                 />
-                <div id="about" className="bio" ref={containerRef}>
+                <div id="about" className="bio" ref={containerRef} style={{cursor:"default"}}>
                     <h2 className="bio-label">&gt; hello_iam</h2>
 
                     <h1 className="bio-name">Gavriel Reynard</h1>
@@ -93,7 +93,7 @@ export default function App() {
                     </h2>
                 </div>
                 <div id="experience" className="experience" ref={containerRef}>
-                    <div className="title-experience" style={{ display: "flex", alignItems:"center"}}>
+                    <div className="title-experience" style={{ display: "flex", alignItems:"center", cursor:"default"}}>
                         <div className="svg-line" style={{height: "1px", backgroundColor:"#66d593"}} ></div>
                         <h2 className="experience-label sub-header">EXPERIENCE</h2>
                     </div>
@@ -113,7 +113,7 @@ export default function App() {
 
                 </div>
                 <div id="projects" className="projects" ref={containerRef}>
-                    <div className="title-projects" style={{ display: "flex", alignItems:"center"}}>
+                    <div className="title-projects" style={{ display: "flex", alignItems:"center", cursor:"default"}}>
                         <div className="svg-line" style={{height: "1px", backgroundColor:"#66d593"}} ></div>
                         <h2 className="projects-label sub-header">PROJECTS</h2>
                     </div>
@@ -145,7 +145,7 @@ export default function App() {
                     {/* <div className="button-all-projects text-jetbrains-mono-regular white" style={{cursor: "pointer", textAlign: "left"}}>View more projects →</div> */}
                 </div>
                 <div id="certifications" className="certifications" ref={containerRef}>
-                    <div className="label-title-certifications" style={{ display: "flex", alignItems:"center"}}>
+                    <div className="label-title-certifications" style={{ display: "flex", alignItems:"center", cursor:"default"}}>
                         <div className="svg-line" style={{height: "1px", backgroundColor:"#66d593"}} ></div>
                         <h2 className="certifications-label sub-header">CERTIFICATIONS</h2>
                     </div>
@@ -154,14 +154,17 @@ export default function App() {
                             <div key={index} className="container-certifications">
                                 <div className="title-certifications text-jetbrains-mono-bold white">{certification.title}</div>
                                 <div className="description-certifications text-satoshi-regular white" style={{opacity:"70%"}}>{certification.institution} • {certification.date}</div>
-                                <div className="button-certifications text-jetbrains-mono-regular white"
+                                
+                                <a className="button-certifications text-jetbrains-mono-regular white"
+                                target="_blank"
+                                href={certification.link}
                                 style={{backgroundColor: "rgba(39, 191, 101, 0.2)",
                                     width: "fit-content",
                                     padding: "3px 10px",
                                     opacity: "60%",
                                     borderRadius: "34px"
                                 }}
-                                >Show credential →</div>
+                                >Show credential →</a>
                             </div>
                         ))}
                     </div>

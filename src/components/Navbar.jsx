@@ -4,7 +4,7 @@ import "../styles/navbar.css"
 export default function Navbar (props) {
 
     return (
-        <div className="wrapper-nav" style={{display:"flex"}}>
+        <div className="wrapper-nav" style={{display:"flex", cursor:"default"}}>
             <div className="container-about" style={{display:"flex", flexDirection:"row", alignItems:"center", gap:"12px"}}>
                 <div id="text-about" className={`label text-jetbrains-mono-medium default-color ${props.activeId === "about" ? "active-color" : ""}`}>ABOUT</div>
                 <div id="line-about" className={`svg-line default-background-color ${props.activeId === "about" ? "active-background-color" : ""}`} style={{ height:"1px"}} ></div>
