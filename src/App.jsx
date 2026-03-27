@@ -3,6 +3,7 @@ import Contacts from "./components/Contacts.jsx";
 import work_experience from "./assets/data/work_experience.json";
 import projects from "./assets/data/projects.json";
 import certifications from "./assets/data/certifications.json";
+import Navbar from "./components/Navbar.jsx";
 
 export default function App() {
 
@@ -46,6 +47,7 @@ export default function App() {
         <div className="wrapper overflow hide-scrollbar">
             <div className="content-pane" style={{display:"flex", flexDirection:"column"}}>
                 <Contacts/>
+                <Navbar/>
                 <div className="bio">
                     <h2 className="bio-label">&gt; hello_iam</h2>
 
@@ -65,7 +67,7 @@ export default function App() {
                 </div>
                 <div className="experience">
                     <div className="title-experience" style={{ display: "flex", alignItems:"center"}}>
-                        <img className="svg-line" src="./src/assets/line.svg" alt=""style={{height: "1px", backgroundColor:"#66d593"}} />
+                        <div className="svg-line" style={{height: "1px", backgroundColor:"#66d593"}} ></div>
                         <h2 className="experience-label sub-header">EXPERIENCE</h2>
                     </div>
                     <div className="wrapper-experience">
@@ -85,7 +87,7 @@ export default function App() {
                 </div>
                 <div className="projects">
                     <div className="title-projects" style={{ display: "flex", alignItems:"center"}}>
-                        <img className="svg-line" src="./src/assets/line.svg" alt=""style={{height: "1px", backgroundColor:"#66d593"}} />
+                        <div className="svg-line" style={{height: "1px", backgroundColor:"#66d593"}} ></div>
                         <h2 className="projects-label sub-header">PROJECTS</h2>
                     </div>
                     <div className="wrapper-projects" style={{display:"flex", flexDirection:"column"}}>
@@ -117,7 +119,7 @@ export default function App() {
                 </div>
                 <div className="certifications">
                     <div className="label-title-certifications" style={{ display: "flex", alignItems:"center"}}>
-                        <img className="svg-line" src="./src/assets/line.svg" alt=""style={{height: "1px", backgroundColor:"#66d593"}} />
+                        <div className="svg-line" style={{height: "1px", backgroundColor:"#66d593"}} ></div>
                         <h2 className="certifications-label sub-header">CERTIFICATIONS</h2>
                     </div>
                     <div className="wrapper-certifications" style={{display:"flex", cursor:"pointer", flexDirection:"column", maxWidth:"fit-content"}}>

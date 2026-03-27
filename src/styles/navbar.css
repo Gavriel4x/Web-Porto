@@ -1,0 +1,73 @@
+/* media screen, 1728px, 1024px, 402px */
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("../assets/fonts/JetBrainsMono-Medium.woff2") format("woff2");
+    font-weight: 500;
+}
+
+@media (min-width: 1728px),(max-width: 1728px) {
+
+    .wrapper-nav {
+        flex-direction: column;
+        gap:30px;
+
+        position: absolute;
+        top: 120px;
+        right: 95px;
+    }
+
+    .label {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .wrapper-nav {
+        flex-direction: row;
+        gap:11px;
+
+        top: 77px;
+        right: 45px;
+    }
+}
+
+@media (max-width: 402px) {
+
+    .wrapper-nav {
+        gap:12px;
+
+        top: 78px;
+        right: 37px;
+    }
+
+    .label {
+        font-size: 9px;
+    }
+
+    .svg-line {
+        display:none;
+    }
+}
+
+.text-jetbrains-mono-medium {
+    font-family: JetBrains Mono;
+    font-weight: 500;
+}
+
+.default-color {
+    color: rgba(134, 134, 134, 0.5);
+}
+
+.default-background-color {
+    background-color: rgba(134, 134, 134, 0.5);
+}
+
+.active-color {
+    color: #66D593;
+}
+
+.active-background-color {
+    background-color: #66D593;
+}
