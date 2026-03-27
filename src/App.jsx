@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import {useEffect, useState, useRef} from "react";
 import Contacts from "./components/Contacts.jsx";
 import work_experience from "./assets/data/work_experience.json";
 import projects from "./assets/data/projects.json";
@@ -11,6 +11,26 @@ export default function App() {
     const [displayDivThree, setDisplayDivThree] = useState("none");
     const [displayDivFour, setDisplayDivFour] = useState("none");
     const [displayDivFive, setDisplayDivFive] = useState("none");  
+
+    // observe component props
+    const containerRef = useRef(null);
+    const [activeId, setActiveId] = useState("");
+
+    const callbackFunction = (entries) => {
+        const [ entry ] = entries;
+
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+            setActiveId(entry.target.id);
+            }
+        });
+    }
+
+    const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.3
+    }
 
     useEffect(() => {
         const t1 = setTimeout(() => setDisplayDivTwo("revert"), 3000);
@@ -33,6 +53,11 @@ export default function App() {
         window.addEventListener("pointermove", handlePointerMove);
         window.addEventListener("pointerleave", handlePointerLeave);
 
+        //handle intersection observer
+        const sections = document.querySelectorAll("div[id]");
+        const observer = new IntersectionObserver(callbackFunction, options);
+        sections.forEach((section) => observer.observe(section));
+
         return () => {
             clearTimeout(t1);
             clearTimeout(t2);
@@ -40,15 +65,18 @@ export default function App() {
             clearTimeout(t4);
             window.removeEventListener("pointermove", handlePointerMove);
             window.removeEventListener("pointerleave", handlePointerLeave);
+            observer.disconnect();
         };
-    }, []);
+    },[]);
 
     return (
         <div className="wrapper overflow hide-scrollbar">
             <div className="content-pane" style={{display:"flex", flexDirection:"column"}}>
                 <Contacts/>
-                <Navbar/>
-                <div className="bio">
+                <Navbar
+                    activeId={activeId}
+                />
+                <div id="about" className="bio" ref={containerRef}>
                     <h2 className="bio-label">&gt; hello_iam</h2>
 
                     <h1 className="bio-name">Gavriel Reynard</h1>
@@ -65,7 +93,7 @@ export default function App() {
                         <div style={{display: displayDivFive}}> Open <a style={{color: "#FEA2CD"}}>for</a> collaboration and opportunities.</div>
                     </h2>
                 </div>
-                <div className="experience">
+                <div id="experience" className="experience" ref={containerRef}>
                     <div className="title-experience" style={{ display: "flex", alignItems:"center"}}>
                         <div className="svg-line" style={{height: "1px", backgroundColor:"#66d593"}} ></div>
                         <h2 className="experience-label sub-header">EXPERIENCE</h2>
@@ -85,7 +113,7 @@ export default function App() {
                     </div>
 
                 </div>
-                <div className="projects">
+                <div id="projects" className="projects" ref={containerRef}>
                     <div className="title-projects" style={{ display: "flex", alignItems:"center"}}>
                         <div className="svg-line" style={{height: "1px", backgroundColor:"#66d593"}} ></div>
                         <h2 className="projects-label sub-header">PROJECTS</h2>
@@ -117,7 +145,7 @@ export default function App() {
                     </div>
                     {/* <div className="button-all-projects text-jetbrains-mono-regular white" style={{cursor: "pointer", textAlign: "left"}}>View more projects →</div> */}
                 </div>
-                <div className="certifications">
+                <div id="certifications" className="certifications" ref={containerRef}>
                     <div className="label-title-certifications" style={{ display: "flex", alignItems:"center"}}>
                         <div className="svg-line" style={{height: "1px", backgroundColor:"#66d593"}} ></div>
                         <h2 className="certifications-label sub-header">CERTIFICATIONS</h2>
