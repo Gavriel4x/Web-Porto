@@ -3,18 +3,33 @@
         "title": "Portfolio Website",
         "description": "First personal portfolio website built with genuine design and learning experience.",
         "image": "https://res.cloudinary.com/dykphdvdb/image/upload/v1774450354/thumbnail_porto_web_fhj825.png",
-        "techstack": ["HTML", "CSS", "JavaScript", "React"]
+        "techstack": ["HTML", "CSS", "JavaScript", "React"],
+        "role": "Front-End",
+        "github": "https://github.com/Gavriel4x/Web-Porto",
+        "detail": "Portfolio Website is a project to showcase work experience, projects, skills, certifications and contacts of the author. This project is originated from the idea of wanting to showcase projects that perform and delivering the best in front-end all in one place, as a seriousness of the author wanting to pursue career in IT. This project is made out of the following tech-stacks: Html, Css, Javascript (React.js framework), with the support of PRD(Product Requirement Document) document for documentation, Figma for designs, git for version control, github to showcase code online, and github pages as replacement for hosting this project. The Objective is simple, to follow the design with pixel to pixel accurate implementation in front-end. The result vs expectation is 100%, product follows 100% of design, and final product follows expectation of the theme, and design suitable for author, with a product that is done with front-end. This project has 1 improvement feature that is due for another time which is another whole new page, if there are more than 3 projects, and improvement for refactoring for scalability and readability. Overall satisfaction is 70% with needing for improvements in the future.",
+        "showcase": "",
+        "image-showcase": ["",""]
     },
     {
         "title": "Valentine's Day Website",
         "description": "Freelance project for a Valentine's Day themed website.",
         "image": "https://res.cloudinary.com/dykphdvdb/image/upload/v1774450677/thumbnail_valentines_web_qzjurh.png",
-        "techstack": ["EJS","Express", "Node.js","SQLite3"]
+        "techstack": ["EJS","Express", "Node.js","SQLite3"],
+        "role": "Full-Stack",
+        "github": "https://github.com/Gavriel4x/Valentine-Surprise",
+        "detail": "Valentine’s Day Website is a project to deliver a heart-warming message and invitation to their partner for valentine’s day, this project is meant for a client. This project is originated from the idea of sending their specific someone to go out on a valentine’s day date with a unique way of inviting. This project is made out of the following tech-stacks: Html, Css, Javascript with Back-end using the following: Express from node.js and SQLite3 for the database and with the support of PRD(Product Requirement Document) document for documentation, Figma for designs, git for version control, github to showcase code online, and OnRender for hosting the product with a built-in self-made server to contain data user inputted. The Objective is simple, to follow the needs for asking questions to target-user, save in the database for sender to look at, and display a message to target-user to go out on a date. The result vs expectation is at 50%, product works 100% as intended, however the design is not focussed as responsivity is neglected, which makes this product only intended for mobile use only. This project plans or improvement on responsivity, code scalability, readability which reflects on how much I still need to learn to write efficient code. Overall satisfaction is 80% as I’am usually only a front-end developer, and this allows me to write more code with more tech-stack with a more challenge.",
+        "showcase": "",
+        "image-showcase": ["",""]
     },
     {
         "title": "QR Code Generator",
         "description": "A QR code generator built with Node.js, allowing users to create and customize QR codes for various purposes.",
         "image": "https://res.cloudinary.com/dykphdvdb/image/upload/v1774450839/thumbnail_qr_generator_rfjlsz.png",
-        "techstack": ["Node.js", "Express"]
+        "techstack": ["Node.js", "Express"],
+        "role": "Back-End",
+        "github": "https://github.com/Gavriel4x/2.4-QR-Code-Project",
+        "detail": "QR Code Generator is a project to deliver a product link, project link, data link or anything by a simple QR for ease of access. This project is originated from author’s way of exploring express and back-end to simplify and ease project delivery. This project is made out of the following tech-stacks: node.js and express and with the support of git for version control, github to showcase code online. The Objective is simple, to convert links with id’s and token into simpler encapsulated with the idea of QR Code. The result vs expectation is at 100% as it is a very simple tool for projects to come. This project hasn’t have any plans yet for further improvements as it is straightforward. Overall satisfaction is at 80% as it is a simple tool, to combine with many projects to come in the future.",
+        "showcase": "",
+        "image-showcase": ["",""]
     }
 ]
