@@ -8,10 +8,11 @@
   "dependencies": {
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "react-router-dom": "^6.30.3"
+    "react-router-dom": "^6.30.3",
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
-    "start": "parcel src/index.html",
+    "start": "parcel public/index.html",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build"
