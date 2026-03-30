@@ -1,14 +1,18 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "../styles/projectsDetail.css"
 
 export default function ProjectsDetail() {
 
     const location = useLocation();
+    const navigate = useNavigate();
     const projectData = location.state;
 
     return (
         <div className="wrapper-project-detail overflow hide-scrollbar" style={{height:"952px"}}>
+            <div className="button-back-projects-detail text-jetbrains-mono-regular white" onClick={() => navigate('/')} style={{fontSize:"20px", cursor:"pointer"}}>
+                ← Gavriel Reynard
+            </div>
             <div className="container-top">
                 <div className="text-description text-jetbrains-mono-bold primary-green" style={{fontSize:"36px"}}>{projectData.description}</div>
                 <div className="container-top-inner" style={{display:"flex", flexDirection:"column", marginTop:"32px", gap:"26px"}}>

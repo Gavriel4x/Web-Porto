@@ -51,3 +51,13 @@
   width: 0;
   height: 0;
 }
+
+.button-back-projects-detail {
+    position: absolute;
+    top: 97px;
+    left: 145px;
+}
+
+.button-back-projects-detail:hover {
+    color: #66D593;
+}

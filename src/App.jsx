@@ -18,6 +18,7 @@ export default function App() {
     const containerRef = useRef(null);
     const [activeId, setActiveId] = useState("");
     const location = useLocation();
+    const [isWide, setIsWide] = useState(window.innerWidth >= 1728);
 
     const callbackFunction = (entries) => {
 
@@ -47,6 +48,10 @@ export default function App() {
         const t3 = setTimeout(() => setDisplayDivFour("revert"), 8750);
         const t4 = setTimeout(() => setDisplayDivFive("revert"), 9250);
 
+        const handleResize = () => {
+            setIsWide(window.innerWidth >= 1700);
+        };
+
         const handlePointerMove = (event) => {
             const x = `${event.clientX}px`;
             const y = `${event.clientY}px`;
@@ -61,6 +66,7 @@ export default function App() {
 
         window.addEventListener("pointermove", handlePointerMove);
         window.addEventListener("pointerleave", handlePointerLeave);
+        window.addEventListener('resize', handleResize);
 
         //handle intersection observer
         const sections = document.querySelectorAll("div[id]");
@@ -74,6 +80,7 @@ export default function App() {
             clearTimeout(t4);
             window.removeEventListener("pointermove", handlePointerMove);
             window.removeEventListener("pointerleave", handlePointerLeave);
+            window.removeEventListener('resize', handleResize);
             observer.disconnect();
         };
     },[location.pathname]);
@@ -82,7 +89,7 @@ export default function App() {
 
     const toProjectsDetail = (data) => {
 
-        navigate("/projects-detail",{ state: data })
+        isWide ? navigate("/projects-detail",{ state: data }) : window.open(data.github, '_blank')
     }
 
     return (
@@ -141,7 +148,7 @@ export default function App() {
                                     <div key={index} className="card-item-projects inner-wrapper-projects" style={{display:"flex",cursor: "pointer", gap:"36px", borderRadius:"10px"}}>
                                         <img className="img-projects" src={project.image} alt={project.title} />
                                         
-                                        <div className="container-projects" style={{display:"flex", flexDirection:"column", justifyContent:"space-between"}}>
+                                        <div className="container-projects" onClick={ () => toProjectsDetail(project)} style={{display:"flex", flexDirection:"column", justifyContent:"space-between"}}>
                                             <div className="container-item-projects" style={{display:"flex", flexDirection:"column"}}>
                                                 <div className="title-project text-jetbrains-mono-bold white">{project.title}</div>
                                                 <div className="description-project text-satoshi-regular white" style={{opacity:"70%"}}>{project.description}</div>
@@ -156,7 +163,7 @@ export default function App() {
                                                     ))}
                                                 </div>
                                             </div>
-                                            <div onClick={ () => toProjectsDetail(project)} className="button-project text-jetbrains-mono-regular white text-zoom-out" style={{opacity: "70%", textAlign: "right"}}>View project →</div>
+                                            <div className="button-project text-jetbrains-mono-regular white text-zoom-out" style={{opacity: "70%", textAlign: "right"}}>View project →</div>
                                         </div>
                                     </div>
                                 ))}
