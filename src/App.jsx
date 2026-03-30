@@ -202,7 +202,7 @@ export default function App() {
             } />
             <Route path="/Web-Porto/projects-detail" element={<ProjectsDetail />} />
             {/* 404 Not Found fallback */}
-            <Route path="*" element={<h1>Page Not Found</h1>} />
+            {/* <Route path="*" element={<h1>Page Not Found</h1>} /> */}
         </Routes>
     );
 }
