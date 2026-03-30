@@ -44,8 +44,21 @@ export default function ProjectsDetail() {
             <div className="container-bottom" style={{marginTop:"126px",display:"flex", flexDirection:"column", gap:"44px"}}>
                 <div className="text-first-section text-satoshi-regular white-70" style={{fontSize:"22px", textAlign:"justify"}}>{projectData.detail}</div>
                 <div className="image-showcase">
-                    <img src={projectData['image-showcase'][0]} alt="" className="first-image image" />
-                    <img src={projectData['image-showcase'][1]} alt="" className="second-image image" />
+                    {projectData['image-showcase'][0] ? (
+                        <>
+                            <img 
+                                src={projectData['image-showcase'][0]} 
+                                alt="" 
+                                className="first-image image" 
+                            />
+                            <img 
+                                src={projectData['image-showcase'][1]} 
+                                alt="" 
+                                className="second-image image" 
+                            />
+                        </>
+                    ) : null}
+                    
                 </div>
                 <div className="text-second-section text-satoshi-regular white-70" style={{fontSize:"22px", textAlign:"justify"}}>{projectData.showcase}</div>
             </div>
