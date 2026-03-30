@@ -10,7 +10,7 @@ export default function ProjectsDetail() {
 
     return (
         <div className="wrapper-project-detail overflow hide-scrollbar" style={{height:"952px"}}>
-            <div className="button-back-projects-detail text-jetbrains-mono-regular white" onClick={() => navigate('/')} style={{fontSize:"20px", cursor:"pointer"}}>
+            <div className="button-back-projects-detail text-jetbrains-mono-regular white" onClick={() => navigate('/Web-Porto/')} style={{fontSize:"20px", cursor:"pointer"}}>
                 ← Gavriel Reynard
             </div>
             <div className="container-top">
