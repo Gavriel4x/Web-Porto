@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import "../styles/ProjectsDetail.css"
+import "../styles/projectsDetail.css"
 
 export default function ProjectsDetail() {
 
@@ -8,12 +8,46 @@ export default function ProjectsDetail() {
     const projectData = location.state;
 
     return (
-        <div className="wrapper-project-detail">
+        <div className="wrapper-project-detail overflow hide-scrollbar" style={{height:"952px"}}>
             <div className="container-top">
-                <img src={projectData.image} alt="" className="thumbnail" />
+                <div className="text-description text-jetbrains-mono-bold primary-green" style={{fontSize:"36px"}}>{projectData.description}</div>
+                <div className="container-top-inner" style={{display:"flex", flexDirection:"column", marginTop:"32px", gap:"26px"}}>
+                    <div className="container-role" style={{display:"flex", flexDirection:"row", gap:"86px"}}>
+                        <div className="label label-role text-jetbrains-mono-regular white-70" style={{fontSize:"22px"}}>ROLE</div>
+                        <div className="text-role text-satoshi-regular white-70"  style={{fontSize:"22px"}}>{projectData.role}</div>
+                    </div>
+                    <div className="container-techstack" style={{display:"flex", flexDirection:"row", gap:"86px"}}>
+                        <div className="label label-techstack text-jetbrains-mono-regular white-70" style={{fontSize:"22px"}}>TECH</div>
+                        <div className="wrapper-techstack" style={{display:"flex", flexDirection:"row", gap:"12px"}}>
+                            {projectData.techstack.map((tech, techIndex) => (
+                                <div key={techIndex} className="techstack-project primary-green text-satoshi-regular"
+                                style={{backgroundColor: "rgba(102, 213, 147, 0.2)",
+                                    width: "fit-content",
+                                    padding: "3px 10px",
+                                    fontSize: "16px"
+                                }}
+                                >{tech}</div>
+                            ))}
+                        </div>
+                    </div>
+                    <div className="container-url" style={{display:"flex", flexDirection:"row", gap:"86px"}}>
+                        <div className="label label-url text-jetbrains-mono-regular white-70" style={{fontSize:"22px"}}>URL</div>
+                        <a className="text-url text-satoshi-regular white-70"  style={{fontSize:"22px", cursor:"pointer", textDecoration:"none"}}
+                            target="_blank"
+                            href={projectData.github}
+                        >
+                            {projectData.github} <img src="https://res.cloudinary.com/dykphdvdb/image/upload/v1774860333/openlink_bnlxsc.svg" alt="" className="image-openlink" />
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div className="container-bottom">
-
+            <div className="container-bottom" style={{marginTop:"126px",display:"flex", flexDirection:"column", gap:"44px"}}>
+                <div className="text-first-section text-satoshi-regular white-70" style={{fontSize:"22px", textAlign:"justify"}}>{projectData.detail}</div>
+                <div className="image-showcase">
+                    <img src={projectData['image-showcase'][0]} alt="" className="first-image image" />
+                    <img src={projectData['image-showcase'][1]} alt="" className="second-image image" />
+                </div>
+                <div className="text-second-section text-satoshi-regular white-70" style={{fontSize:"22px", textAlign:"justify"}}>{projectData.showcase}</div>
             </div>
         </div>
     );

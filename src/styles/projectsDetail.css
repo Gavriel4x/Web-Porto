@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("../assets/fonts/JetBrainsMono-Regular.woff2") format("woff2");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("../assets/fonts/JetBrainsMono-Medium.woff2") format("woff2");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("../assets/fonts/JetBrainsMono-Bold.woff2") format("woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url("../assets/fonts/Satoshi.woff2") format("woff2");
+    font-weight: normal;
+}
+
+.text-jetbrains-mono-regular {
+    font-family: JetBrains Mono;
+    font-weight: normal;
+}
+
+.text-jetbrains-mono-bold {
+    font-family: JetBrains Mono;
+    font-weight: bold;
+}
+
+.text-satoshi-regular {
+    font-family: Satoshi;
+    font-weight: normal;
+}
+
+.primary-green {
+    color: #66d593;
+}
+
+.white-70 {
+    color: rgba(246, 246, 246, 0.7);
+}
+
+.wrapper-project-detail {
+    max-width: 1438px;
+    margin: 162px auto 0;
+    height: 100vh;
+}
+
+.overflow {
+    overflow-y: scroll;
+}
+
+.container-top {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+.container-bottom {
+    padding-bottom: 56px;
+}
+
+.label {
+    width: 52.805px;
+}
+
+.image-showcase {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image {
+    width: 644px;
+    height: 363px;
+}
+
+.hide-scrollbar {
+  /* Firefox */
+  scrollbar-width: none;
+
+  /* Internet Explorer and Edge */
+  -ms-overflow-style: none;
+}
+
+/* Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
