@@ -1,5 +1,5 @@
 {
-  "homepage": "https://gavriel4x.github.io/Web-Porto/",
+  "homepage": "https://gavriel4x.github.io/Web-Porto",
   "devDependencies": {
     "babel-plugin-react-compiler": "^1.0.0",
     "gh-pages": "^6.3.0",

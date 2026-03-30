@@ -89,12 +89,12 @@ export default function App() {
 
     const toProjectsDetail = (data) => {
 
-        isWide ? navigate("/projects-detail",{ state: data }) : window.open(data.github, '_blank')
+        isWide ? navigate("/Web-Porto/projects-detail",{ state: data }) : window.open(data.github, '_blank')
     }
 
     return (
         <Routes>
-            <Route path="/" element={
+            <Route path="/Web-Porto/" element={
                 <div className="wrapper overflow hide-scrollbar">
                     <div className="content-pane" style={{display:"flex", flexDirection:"column"}}>
                         <Contacts/>
@@ -200,7 +200,7 @@ export default function App() {
                     </div>
                 </div>
             } />
-            <Route path="/projects-detail" element={<ProjectsDetail />} />
+            <Route path="/Web-Porto/projects-detail" element={<ProjectsDetail />} />
             {/* 404 Not Found fallback */}
             <Route path="*" element={<h1>Page Not Found</h1>} />
         </Routes>
