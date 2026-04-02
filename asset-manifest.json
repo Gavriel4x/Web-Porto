@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Web-Porto/static/css/main.f56c8f4f.css",
-    "main.js": "/Web-Porto/static/js/main.daf3731b.js",
+    "main.css": "/Web-Porto/static/css/main.cbc886a0.css",
+    "main.js": "/Web-Porto/static/js/main.5dab8945.js",
     "static/media/Background_Desktop.png": "/Web-Porto/static/media/Background_Desktop.bcd1255f24e354b04487.png",
     "static/media/Background_Ipad.png": "/Web-Porto/static/media/Background_Ipad.17ef390d7a35d1fa2a02.png",
     "static/media/Background_Iphone.png": "/Web-Porto/static/media/Background_Iphone.52002ab417bc476b1f3c.png",
@@ -10,11 +10,11 @@
     "static/media/JetBrainsMono-Regular.woff2": "/Web-Porto/static/media/JetBrainsMono-Regular.1d9e47ce7f6576ce7bae.woff2",
     "static/media/Satoshi.woff2": "/Web-Porto/static/media/Satoshi.4cc4966a8f3a26f2a389.woff2",
     "index.html": "/Web-Porto/index.html",
-    "main.f56c8f4f.css.map": "/Web-Porto/static/css/main.f56c8f4f.css.map",
-    "main.daf3731b.js.map": "/Web-Porto/static/js/main.daf3731b.js.map"
+    "main.cbc886a0.css.map": "/Web-Porto/static/css/main.cbc886a0.css.map",
+    "main.5dab8945.js.map": "/Web-Porto/static/js/main.5dab8945.js.map"
   },
   "entrypoints": [
-    "static/css/main.f56c8f4f.css",
-    "static/js/main.daf3731b.js"
+    "static/css/main.cbc886a0.css",
+    "static/js/main.5dab8945.js"
   ]
 }
