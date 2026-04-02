@@ -21,6 +21,11 @@
     .label {
         font-size: 18px;
     }
+
+    .svg-line-nav {
+        width: 32px;
+        margin-right: 16px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -47,7 +52,7 @@
         font-size: 9px;
     }
 
-    .svg-line {
+    .svg-line-nav {
         display:none;
     }
 }
