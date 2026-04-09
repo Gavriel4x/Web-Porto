@@ -199,6 +199,11 @@ Iphone: 402px x 873px
         margin-top: 182px;
 
         max-width: 709px;
+        height: 1184px;
+    }
+
+    .container-content-porto {
+        overflow: scroll;
     }
 
     /* Bio */
@@ -269,8 +274,12 @@ Iphone: 402px x 873px
         margin-left: 36px;
         margin-top: 132px;
 
-        height: 700px;
         max-width: 330px;
+    }
+
+    .container-content-porto {
+        height: 741px;
+        overflow: scroll;
     }
 
     /* bio  */
@@ -413,7 +422,7 @@ Iphone: 402px x 873px
     }
 
     /* contacts  */
-    .content-pane > *:first-child {
+    .container-content-porto > *:first-child {
         order: 9;
     }
 }
