@@ -46,8 +46,8 @@ Iphone: 402px x 873px
 }
 
 @media (min-width: 1728px), (max-width: 1728px) {
-    body{
-        background-image: url("./assets/Background_Desktop.png");
+    :root{
+        --bg-image: url("./assets/Background_Desktop.png");
         min-height: 100dvh;
     }
 
@@ -199,8 +199,8 @@ Iphone: 402px x 873px
 }
 
 @media (max-width: 1024px) {
-    body{
-        background-image: url("./assets/Background_Ipad.png") !important;
+    :root{
+        --bg-image: url("./assets/Background_Ipad.png") !important;
     }
 
     .content-pane {
@@ -275,8 +275,8 @@ Iphone: 402px x 873px
 }
 
 @media (max-width: 402px) {
-    body{
-        background-image: url("./assets/Background_Iphone.png") !important;
+    :root{
+        --bg-image: url("./assets/Background_Iphone.png") !important;
     }
 
     .wrapper {
@@ -448,7 +448,7 @@ body{
     background-position: center;
     background-image:
         radial-gradient(circle at var(--cursor-x) var(--cursor-y), rgba(var(--glow-color), var(--glow-opacity)) 0px, rgba(var(--glow-color), calc(var(--glow-opacity) * 0.35)) 80px, rgba(var(--glow-color), 0) 200px),
-        url("./assets/Background_Desktop.png");
+        var(--bg-image);
     background-blend-mode: screen, normal;
     transition: --glow-opacity 0.2s ease;
 }
