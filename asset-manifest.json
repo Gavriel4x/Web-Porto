@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Web-Porto/static/css/main.a3960fe8.css",
+    "main.css": "/Web-Porto/static/css/main.a37f0e0a.css",
     "main.js": "/Web-Porto/static/js/main.d55947c9.js",
     "static/media/Background_Desktop.png": "/Web-Porto/static/media/Background_Desktop.bcd1255f24e354b04487.png",
     "static/media/Background_Ipad.png": "/Web-Porto/static/media/Background_Ipad.17ef390d7a35d1fa2a02.png",
@@ -10,11 +10,11 @@
     "static/media/JetBrainsMono-Regular.woff2": "/Web-Porto/static/media/JetBrainsMono-Regular.1d9e47ce7f6576ce7bae.woff2",
     "static/media/Satoshi.woff2": "/Web-Porto/static/media/Satoshi.4cc4966a8f3a26f2a389.woff2",
     "index.html": "/Web-Porto/index.html",
-    "main.a3960fe8.css.map": "/Web-Porto/static/css/main.a3960fe8.css.map",
+    "main.a37f0e0a.css.map": "/Web-Porto/static/css/main.a37f0e0a.css.map",
     "main.d55947c9.js.map": "/Web-Porto/static/js/main.d55947c9.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3960fe8.css",
+    "static/css/main.a37f0e0a.css",
     "static/js/main.d55947c9.js"
   ]
 }
