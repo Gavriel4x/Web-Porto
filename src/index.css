@@ -283,7 +283,7 @@ Iphone: 402px x 873px
         margin-top: 70px;
 
         max-width: 330px;
-        height: calc(100dvh - 70px - env(safe-area-inset-bottom));
+        height: calc(100dvh - 70px);
     }
 
     .container-content-porto {
