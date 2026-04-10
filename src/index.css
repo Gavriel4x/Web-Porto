@@ -15,6 +15,10 @@ Iphone: 402px x 873px
     --glow-color: 255, 255, 255;
 }
 
+html, body {
+    height: 100%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -53,7 +57,7 @@ Iphone: 402px x 873px
 
     .wrapper {
         padding-top: env(safe-area-inset-top);
-        height: 100vh;
+        min-height: 100dvh;
     }
 
     .content-pane {
@@ -451,6 +455,8 @@ body{
         var(--bg-image);
     background-blend-mode: screen, normal;
     transition: --glow-opacity 0.2s ease;
+
+    min-height: 100dvh;
 }
 
 body:hover {
