@@ -4,6 +4,9 @@ Macbook pro: 1728px x 1117px2
 Ipad 12: 1024px x 1366px
 Iphone: 402px x 873px 
 */
+#root {
+  min-height: 100dvh;
+}
 
 :root {
     --cursor-x: 50%;
