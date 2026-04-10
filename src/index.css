@@ -274,12 +274,16 @@ Iphone: 402px x 873px
         background-image: url("./assets/Background_Iphone.png") !important;
     }
 
+    .wrapper {
+        height: 100dvh;
+    }
+
     .content-pane {
         margin-left: 36px;
         margin-top: 70px;
 
         max-width: 330px;
-        height: 741px;
+        max-height: 741px;
     }
 
     .container-content-porto {
