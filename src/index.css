@@ -274,6 +274,10 @@ Iphone: 402px x 873px
         background-image: url("./assets/Background_Iphone.png") !important;
     }
 
+    .wrapper {
+        height: 100%;
+    }
+
     .content-pane {
         margin-left: 36px;
         margin-top: 70px;
