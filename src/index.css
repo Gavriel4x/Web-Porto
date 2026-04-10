@@ -270,6 +270,12 @@ Iphone: 402px x 873px
         background-image: url("./assets/Background_Iphone.png") !important;
     }
 
+    .wrapper {
+        padding-top: env(safe-area-inset-top); 
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
+    }
+
     .content-pane {
         margin-left: 36px;
         margin-top: 132px;
