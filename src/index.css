@@ -271,6 +271,7 @@ Iphone: 402px x 873px
 
 @media (max-width: 402px) {
     body{
+        min-height: 100dvh;
         background-image: url("./assets/Background_Iphone.png") !important;
     }
 
