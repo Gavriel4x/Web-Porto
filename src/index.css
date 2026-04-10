@@ -45,9 +45,11 @@ Iphone: 402px x 873px
 @media (min-width: 1728px), (max-width: 1728px) {
     body{
         background-image: url("./assets/Background_Desktop.png");
+        min-height: 100dvh;
     }
 
     .wrapper {
+        padding-top: env(safe-area-inset-top);
         height: 100vh;
     }
 
