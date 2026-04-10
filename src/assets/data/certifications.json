@@ -1,6 +1,26 @@
-[{
-    "title": "Google Data Analytics Professional",
-    "institution": "Google",
-    "date": "June 2023",
-    "link": "https://www.coursera.org/account/accomplishments/specialization/DE6D762SCNNH"
-}]
+[
+    {
+        "title": "Google Data Analytics Professional",
+        "institution": "Google",
+        "date": "June 2023",
+        "link": "https://www.coursera.org/account/accomplishments/specialization/DE6D762SCNNH"
+    },
+    {
+        "title": "Build Responsive Real-World Websites with HTML and CSS",
+        "institution": "Udemy",
+        "date": "April 2026",
+        "link": "https://www.udemy.com/certificate/UC-acf53274-3795-4f25-8894-0ee0c6b97c72/"
+    },
+    {
+        "title": "AI for Beginners - An Overview for Business Professionals",
+        "institution": "Udemy",
+        "date": "Jan 2026",
+        "link": "https://www.udemy.com/certificate/UC-1a8612f6-0fda-452e-ba0f-4dfa8825471b/"
+    },
+    {
+        "title": "Introduction To AI For Business",
+        "institution": "Udemy",
+        "date": "April 2026",
+        "link": "https://www.udemy.com/certificate/UC-9095480f-2262-41fa-9019-633a901ea09e/"
+    }
+]

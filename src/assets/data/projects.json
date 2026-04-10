@@ -1,5 +1,16 @@
 [
     {
+        "title": "Decentralized Script Writer",
+        "description": "First Blockchain Web App using Front-End and Fullstack featured app build in the IC (Internet Computer).",
+        "image": "https://res.cloudinary.com/dykphdvdb/image/upload/q_auto/f_auto/v1775806511/dscripter-default_sjgocv.png",
+        "techstack": ["React", "Motoko", "Blockchain"],
+        "role": "Full-Stack",
+        "github": "https://github.com/Gavriel4x/DScripter",
+        "detail": "Decentralized Script Writer is a blockchain Internet Computer app to write script drafts and scripts for youtube / tiktok / instagram content. The author is doing content creation regarding IT, Computer Science and tech-trends online through social media and wants an easier script holder without the cost of a large database subscription yet being able to be used by his social media manager and editor. This project is made for the strive of catching up with tech-trends and being a full-fledged web developer that strives for professionalism. This project is made out of the following tech-stacks: Html, Css, Javascript (React.js framework), motoko, with the support of git for version control and github to showcase code online. The Objective is simple, to give a simple design and features the ability to take notes and persists data on the internet computer blockchain to keep data transparency and integrity. The result vs expectation of this project is 70% satisfactory, the author writes cleaner react codes and writes back-end on the motoku and integrates back-end on canisters and keeps canisters updated. This project has more improvement features to come as this project might have a chance to become a real product with the importance of data integrity and data transparency.",
+        "showcase": "This showcases the display of DScripter, a Decentralized Scripter app, which users can Create, Read, Update, Delete (CRUD) and everything is saved on the internet computer blockchain. This Stable keyword allows data persistence in the canisters even canisters are updated on the internet computer.",
+        "image-showcase": ["https://res.cloudinary.com/dykphdvdb/image/upload/q_auto/f_auto/v1775806510/dscripter-code_z1vbse.png", "https://res.cloudinary.com/dykphdvdb/image/upload/q_auto/f_auto/v1775806511/dscripter-typed_pcszsg.png"]
+    },
+    {
         "title": "Portfolio Website",
         "description": "First personal portfolio website built with genuine design and learning experience.",
         "image": "https://res.cloudinary.com/dykphdvdb/image/upload/v1774450354/thumbnail_porto_web_fhj825.png",
